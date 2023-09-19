@@ -14,13 +14,17 @@ function Index() {
       </h1>
       <div className="flex md:w-1/3 mx-auto justify-between mt-6">
         <h1
-          className="text-center bg-quatenary w-11/12 mx-auto p-3 text-white font-semibold rounded-xl pt-3 cursor-pointer"
+          className={`text-center ${
+            currentView === "dataTable" ? "bg-quatenary" : "bg-tertiary"
+          } w-11/12 mx-auto p-3 text-white font-semibold rounded-xl pt-3 cursor-pointer`}
           onClick={() => setCurrentView("dataTable")}
         >
           Data Table
         </h1>
         <h1
-          className="text-center w-11/12 bg-quatenary ml-3 mx-auto p-3 text-white font-semibold rounded-xl pt-3 cursor-pointer"
+          className={`text-center ${
+            currentView === "cardView" ? "bg-quatenary" : "bg-tertiary"
+          } w-11/12 ml-3 mx-auto p-3 text-white font-semibold rounded-xl pt-3 cursor-pointer`}
           onClick={() => setCurrentView("cardView")}
         >
           Cards view
