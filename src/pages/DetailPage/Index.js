@@ -18,14 +18,14 @@ const DetailPage = () => {
   if (!listingDetails) return <div>Loading...</div>;
 
   return (
-    <div className="bg-[#3D2B3D] min-h-screen flex pt-4 flex-col items-center justify-center ">
+    <div className="bg-secondary min-h-screen flex pt-4 flex-col items-center justify-center ">
       <Link
         to="/"
-        className="inline-flex items-center px-3 py-2  mb-3 text-sm font-medium text-center text-white bg-[#6C4B6C] rounded-lg hover:bg-[#472f47] focus:ring-4 focus:outline-none"
+        className="inline-flex items-center px-3 py-2  mb-3 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-[#472f47] focus:ring-4 focus:outline-none"
       >
         Back To Home{" "}
       </Link>
-      <div className="max-w-2xl mx-auto pt-8 p-6 bg-white rounded-lg shadow-md text-white dark:bg-[#6C4B6C]">
+      <div className="max-w-2xl mx-auto pt-8 p-6 bg-white rounded-lg shadow-md text-white dark:bg-primary">
         <img
           src={listingDetails.imageUrl}
           alt={listingDetails.title}

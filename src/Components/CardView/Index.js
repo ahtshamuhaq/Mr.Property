@@ -19,7 +19,7 @@ const Index = () => {
       {listings.map((listing) => (
         <div
           key={listing.id}
-          className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-[#6C4B6C] dark:border-gray-700"
+          className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-primary dark:border-gray-700"
         >
           <img
             className="rounded-t-lg h-60 w-full"
@@ -38,7 +38,7 @@ const Index = () => {
             </p>
             <Link
               to={`/listing/${listing.id}`}
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#6C4B6C] rounded-lg hover:bg-[#472f47] focus:ring-4 focus:outline-none"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-[#472f47] focus:ring-4 focus:outline-none"
             >
               View
             </Link>

@@ -46,7 +46,7 @@ const Index = () => {
         <input
           type="text"
           placeholder="Search by title..."
-          className="bg-[#241924] p-2 mb-2"
+          className="bg-quinary p-2 mb-2"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
@@ -54,7 +54,7 @@ const Index = () => {
         <select
           value={sortType}
           onChange={(e) => setSortType(e.target.value)}
-          className=" border-none  ml-auto mb-2 bg-[#241924] rounded-md p-2"
+          className=" border-none  ml-auto mb-2 bg-quinary rounded-md p-2"
         >
           <option value="default">Default</option>
           <option value="asc">Ascending Price</option>
@@ -65,7 +65,7 @@ const Index = () => {
       </div>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-white uppercase bg-gray-50 dark:bg-[#241924] dark:text-white">
+          <thead className="text-xs text-white uppercase bg-gray-50 dark:bg-quinary dark:text-white">
             <tr>
               <th scope="col" className="px-6 py-3">
                 Title
@@ -85,7 +85,7 @@ const Index = () => {
             {displayedListings.map((listing) => (
               <tr
                 key={listing.id}
-                className="bg-white border-b mt-3 dark:bg-[#6C4B6C] dark:border-gray-700 hover:bg-[#472f47]"
+                className="bg-white border-b mt-3 dark:bg-primary dark:border-gray-700 hover:bg-[#472f47]"
               >
                 <th
                   scope="row"
@@ -116,8 +116,8 @@ const Index = () => {
             key={num}
             className={
               currentPage === num + 1
-                ? "bg-[#6C4B6C] ml-2 h-6 w-6 rounded-full flex justify-center items-center text-white"
-                : " bg-[#6C4B6C] ml-2 h-6 w-6 rounded-full flex justify-center items-center text-white"
+                ? "bg-primary ml-2 h-6 w-6 rounded-full flex justify-center items-center text-white"
+                : "  ml-2 h-6 w-6 rounded-full flex justify-center items-center text-white"
             }
             onClick={() => setCurrentPage(num + 1)}
           >
